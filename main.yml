@@ -1,0 +1,4 @@
+- name: DNS
+  hosts: all
+  sudo: true
+  tasks:
