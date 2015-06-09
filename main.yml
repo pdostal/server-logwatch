@@ -3,7 +3,7 @@
   sudo: true
   tasks:
   - name: Install logwatch
-    yum: name=logwatch state=latest
+    apt: name=logwatch state=latest
   - name: Paste config
     template: >
       src=templates/logwatch.conf
