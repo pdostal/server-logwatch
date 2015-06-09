@@ -1,4 +1,4 @@
-- name: DNS
+- name: LogWatch
   hosts: all
   sudo: true
   tasks:
