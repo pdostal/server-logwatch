@@ -4,6 +4,8 @@
   tasks:
   - name: Install logwatch
     apt: name=logwatch state=latest
+  - name: Remove dist configuration
+    file: path=/usr/share/logwatch/dist.conf state=absent
   - name: Paste config
     template: >
       src=templates/logwatch.conf
